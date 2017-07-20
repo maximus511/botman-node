@@ -226,6 +226,10 @@ UpgradeLog*.htm
 *.bim.layout
 *.bim_*.settings
 
+# Dependency directories
+node_modules/
+jspm_packages/
+
 # Microsoft Fakes
 FakesAssemblies/
 
