@@ -1,0 +1,25 @@
+{
+  "name": "botman-node",
+  "version": "1.0.0",
+  "description": "Node based back end for Botman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximus511/botman-node.git"
+  },
+  "author": "Rahul Nair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximus511/botman-node/issues"
+  },
+  "homepage": "https://github.com/maximus511/botman-node#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
