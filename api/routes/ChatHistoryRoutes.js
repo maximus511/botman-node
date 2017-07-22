@@ -13,4 +13,7 @@ module.exports = function (app) {
 
 	app.route('/deleteChat:authID')
 		.post(chatHistory.clear_history);
+
+	app.route('/getSample')
+		.post(chatHistory.getSample);
 };
