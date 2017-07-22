@@ -57,5 +57,5 @@ exports.getSample = function (req, res) {
       ],
       "source": "DuckDuckGo"
     };
-    res.json(chat);
+    res.json(data);
 };
