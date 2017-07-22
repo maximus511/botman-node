@@ -56,6 +56,7 @@ exports.getSample = function (req, res) {
       "contextOut": [
 
       ],
+      parameters: { location: 'Mumbai' },
       "source": "DuckDuckGo"
     };
     res.json(data);
