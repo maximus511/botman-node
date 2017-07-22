@@ -6,7 +6,7 @@ var express = require('express'),
   bodyParser = require('body-parser');
   
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/ChatHistorydb'); 
+mongoose.connect('mongodb://heroku_7rcrjj4s:fq0tkipu75hgi8h7jnpgn22f1b@ds133311.mlab.com:33311/heroku_7rcrjj4s'); 
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
