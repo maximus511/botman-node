@@ -25,8 +25,8 @@ exports.getData = function (req, res) {
   } else {
     var location = reqData.parameters.location.toLowerCase();
     office = apiData.offices[location];
-    console.log(JSON.stringify(createResponse(location, intent, responseIntent)));
-    res.json(createResponse(location, intent, responseIntent));
+    console.log(JSON.stringify(createResponse(office, intent, responseIntent)));
+    res.json(createResponse(office, intent, responseIntent));
   }
 }
 
