@@ -1,3 +1,5 @@
+var cors = require('cors');
+
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 8000,
@@ -5,8 +7,11 @@ var express = require('express'),
   ChatHistory = require('./api/models/ChatHistoryModel'),
   bodyParser = require('body-parser');
   
+app.use(cors());
+  
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/ChatHistorydb'); 
+mongoose.connect('mongodb://heroku_7rcrjj4s:fq0tkipu75hgi8h7jnpgn22f1b@ds133311.mlab.com:33311/heroku_7rcrjj4s'); 
+
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,4 +25,4 @@ routes(app);
 app.listen(port);
 
 
-console.log('todo list RESTful API server started on: ' + port);
+console.log('Botman RESTful API server started on: ' + port);
