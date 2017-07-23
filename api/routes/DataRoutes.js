@@ -16,4 +16,7 @@ module.exports = function (app) {
 
 	app.route('/getSample')
 		.post(chatHistory.getSample);
+
+	app.route('/apiData')
+		.post(chatHistory.getData);
 };

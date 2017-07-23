@@ -1,0 +1,140 @@
+{
+  "offices": {
+    "Mumbai": [
+      {
+        "address": "Sec-10, Kharghar",
+        "poc": "Mr. Mourinho",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-11, Goregaon",
+        "poc": "Mr. Martial",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-22, Powai",
+        "poc": "Mr. Henrikh",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Opp. DEF, Andheri",
+        "poc": "Mr. Cantona",
+        "phone": "+91 22 123456"
+      }],
+      "Delhi": [
+      {
+        "address": "Sec-10, Kharghar",
+        "poc": "Mr. Zlatan",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-11, Goregaon",
+        "poc": "Mr. Smalling",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-22, Powai",
+        "poc": "Mr. Lingard",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Opp. DEF, Andheri",
+        "poc": "Mr. Mata",
+        "phone": "+91 22 123456"
+      }],
+      "Kolkata": [
+      {
+        "address": "Sec-10, Kharghar",
+        "poc": "Mr. ABC",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-11, Goregaon",
+        "poc": "Mr. Herrera",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-22, Powai",
+        "poc": "Mr. Rashford",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Opp. DEF, Andheri",
+        "poc": "Mr. Romero",
+        "phone": "+91 22 123456"
+      }],
+      "Chennai": [
+      {
+        "address": "Sec-10, Kharghar",
+        "poc": "Mr. De Gea",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-11, Goregaon",
+        "poc": "Mr. Pogba",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Sec-22, Powai",
+        "poc": "Mr. Lukaku",
+        "phone": "+91 22 123456"
+      },
+      {
+        "address": "Opp. DEF, Andheri",
+        "poc": "Mr. Michael Carrick",
+        "phone": "+91 22 123456"
+      }],
+      "Manchester": [
+      {
+        "address": "Opp. Old Trafford",
+        "poc": "Mr. Wayne Rooney",
+        "phone": "+91 22 123456"
+      }]
+  },
+  "packages":[
+    {
+      "trackingId": "1234",
+      "source": "Mumbai",
+      "destination": "Manchester",
+      "curLocation": "Paris",
+      "estDelivery": "30 July, 2017",
+      "delivered": false,
+      "signedBy": ""
+    },
+    {
+      "trackingId": "1002532",
+      "source": "Mumbai",
+      "destination": "Manchester",
+      "curLocation": "Paris",
+      "estDelivery": "30 July, 2017",
+      "delivered": false,
+      "signedBy": ""
+    },
+    {
+      "trackingId": "1005329",
+      "source": "Mumbai",
+      "destination": "Manchester",
+      "curLocation": "Paris",
+      "estDelivery": "30 July, 2017",
+      "delivered": true,
+      "signedBy": "Nistelrooy"
+    },
+    {
+      "trackingId": "88638877",
+      "source": "Mumbai",
+      "destination": "Manchester",
+      "curLocation": "Paris",
+      "estDelivery": "30 July, 2017",
+      "delivered": true,
+      "signedBy": "George Best"
+    },
+    {
+      "trackingId": "33455",
+      "source": "Mumbai",
+      "destination": "Manchester",
+      "curLocation": "Paris",
+      "estDelivery": "30 July, 2017",
+      "delivered": false,
+      "signedBy": ""
+    }]
+}

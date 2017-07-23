@@ -1,60 +1,12 @@
 'use strict';
 
-
-var mongoose = require('mongoose'),
-  ChatHistory = mongoose.model('ChatHistory');
-
-
-/* 
-  find chat object by ID. If present, update otherwise, create a new one.
-*/
-exports.saveChat = function (req, res) {
-
-  var obj = req.body;
-  var id = obj.authId;
-  delete obj._id;
-
-  if (id) {
-    ChatHistory.update({ authId: id }, obj, { upsert: true }, function (err, chat) {
-      res.json(chat);
-    });
-  }
-};
+var fs = require('fs');
+var data = fs.readFileSync('../apiData/apiData.json');
+var apiData = JSON.parse(data);
 
 /* 
-  get a chat history.
-  if  authId exists, find by id and return response.
+  get required data from api.
 */
-
-exports.getChat = function (req, res) {
-  ChatHistory.findOne({ authId: req.body.authId }, function (err, chat) {
-    if (err) {
-      res.send(err);
-    }
-    res.json(chat);
-  });
-};
-
-exports.clear_history = function (req, res) {
-  ChatHistory.remove({
-    authId: req.body.authId
-  }, function (err, chat) {
-    if (err) {
-      res.send(err);
-    }
-    res.json({ message: 'Chat successfully deleted' });
-  });
-};
-
-exports.getSample = function (req, res) {
-  console.log(req.body);
-    var data= {
-      "data": {
-        lastLocation: "Delhi"
-      },
-      "contextOut": [{"name":"weather", "lifespan":2, "parameters":{"newCity":"Rome"}}],
-      parameters: { location: 'Mumbai' },
-      "source": "DuckDuckGo"
-    };
-    res.json(data);
-};
+exports.getData = function (req, res) {
+  
+}
