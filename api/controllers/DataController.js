@@ -52,27 +52,7 @@ exports.getSample = function (req, res) {
       "data": {
         lastLocation: "Delhi"
       },
-      "contextOut": [{"name":"contact", "lifespan":2, "parameters":{"offices": [
-      {
-        "address": "Sec-10, Kharghar",
-        "poc": "Mr. Mourinho",
-        "phone": "+91 22 123456"
-      },
-      {
-        "address": "\nSec-11, Goregaon",
-        "poc": "Mr. Martial",
-        "phone": "+91 22 123456"
-      },
-      {
-        "address": "\nSec-22, Powai",
-        "poc": "Mr. Henrikh",
-        "phone": "+91 22 123456"
-      },
-      {
-        "address": "\nOpp. DEF, Andheri",
-        "poc": "Mr. Cantona",
-        "phone": "+91 22 123456"
-      }]}}],
+      "contextOut": [{"name":"weather", "lifespan":2, "parameters":{"newCity":"Rome"}}],
       parameters: { location: 'Mumbai' },
       "source": "DuckDuckGo"
     };
