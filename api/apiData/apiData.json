@@ -27,6 +27,7 @@
       "source": "Mumbai",
       "destination": "Manchester",
       "curLocation": "Paris",
+      "shipDate": "28 July, 2017",
       "estDelivery": "30 July, 2017",
       "delivered": false,
       "signedBy": ""
@@ -36,7 +37,8 @@
       "source": "Manchester",
       "destination": "Mumbai",
       "curLocation": "Paris",
-      "estDelivery": "30 July, 2017",
+      "shipDate": "27 July, 2017",
+      "estDelivery": "31 July, 2017",
       "delivered": false,
       "signedBy": ""
     },
@@ -45,6 +47,7 @@
       "source": "Chennai",
       "destination": "Manchester",
       "curLocation": "Paris",
+      "shipDate": "10 June, 2017",
       "estDelivery": "13 June, 2017",
       "delivered": true,
       "signedBy": "Nistelrooy"
@@ -54,6 +57,7 @@
       "source": "London",
       "destination": "Manchester",
       "curLocation": "Paris",
+      "shipDate": "10 July, 2017",
       "estDelivery": "12 July, 2017",
       "delivered": true,
       "signedBy": "George Best"
@@ -63,6 +67,7 @@
       "source": "Kolkata",
       "destination": "Delhi",
       "curLocation": "Paris",
+      "shipDate": "14 January, 2017",
       "estDelivery": "17 January, 2017",
       "delivered": false,
       "signedBy": ""
