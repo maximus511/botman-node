@@ -47,7 +47,7 @@ exports.clear_history = function (req, res) {
 };
 
 exports.getSample = function (req, res) {
-  console.log(req.body);
+  console.log(req, req.headers);
     var data= {
       "data": {
         lastLocation: "Delhi"

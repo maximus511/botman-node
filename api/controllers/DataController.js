@@ -9,26 +9,36 @@ var apiData = JSON.parse(data);
 */
 exports.getData = function (req, res) {
   var reqData = req.body.result;
-  var trackingId = req.body.result.parameters.trackingId;
-  var intent = req.body.result.metadata.intentName + '-context';
+  var intent = reqData.metadata.intentName.toLowerCase();
+  var responseIntent = intent + '-context';
+  var packageDetails = {};
+  var office = {};
+  console.log(reqData);
 
-  var packageDetails = apiData.packages.find((obj) => {
-    return obj.trackingId === trackingId;
-  });
-  console.log('here:', packageDetails);
-  console.log(JSON.stringify(createResponse(packageDetails, intent)));
-
-  res.json(createResponse(packageDetails, intent));
+  if (intent !== 'contact') {
+    var trackingId = reqData.parameters.trackingId;
+    packageDetails = apiData.packages.find((obj) => {
+      return obj.trackingId === trackingId;
+    });
+    console.log('response', JSON.stringify(createResponse(packageDetails, intent, responseIntent)));
+    res.json(createResponse(packageDetails, intent, responseIntent));
+  } else {
+    var location = reqData.parameters.location.toLowerCase();
+    office = apiData.offices[location];
+    console.log(JSON.stringify(createResponse(location, intent, responseIntent)));
+    res.json(createResponse(location, intent, responseIntent));
+  }
 }
 
-function createResponse(obj, intent) {
+function createResponse(obj, intent, responseIntent) {
   var response = {
     "data": {},
     "contextOut": [
       {
-        "name": intent,
+        "name": responseIntent,
         "parameters": {
-          "package": obj
+          "package": (intent !== 'contact') ? obj : {},
+          "office": (intent === 'contact') ? obj : {}
         }
       }
     ]
