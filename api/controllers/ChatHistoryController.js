@@ -52,9 +52,7 @@ exports.getSample = function (req, res) {
       "data": {
         lastLocation: "Delhi"
       },
-      "contextOut": [
-
-      ],
+      "contextOut": [{"name":"weather", "lifespan":2, "parameters":{"newCity":"Rome"}}],
       parameters: { location: 'Mumbai' },
       "source": "DuckDuckGo"
     };
