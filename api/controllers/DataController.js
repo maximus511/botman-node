@@ -10,7 +10,8 @@ var apiData = JSON.parse(data);
 exports.getData = function (req, res) {
   var reqData = req.body.result;
   console.log(reqData);
-  var trackingId = reqData.trackingId;
+  console.log(reqData.parameters);
+  var trackingId = reqData.parameters.trackingId;
   var intent = reqData.metadata.intentName + '-context';
 
   var packageDetails = apiData.reduce((obj, intent) => {
