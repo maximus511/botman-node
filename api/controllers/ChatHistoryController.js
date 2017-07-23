@@ -59,17 +59,17 @@ exports.getSample = function (req, res) {
         "phone": "+91 22 123456"
       },
       {
-        "address": "\nSec-11, Goregaon",
+        "address": "<br>Sec-11, Goregaon",
         "poc": "Mr. Martial",
         "phone": "+91 22 123456"
       },
       {
-        "address": "\nSec-22, Powai",
+        "address": "<br>Sec-22, Powai",
         "poc": "Mr. Henrikh",
         "phone": "+91 22 123456"
       },
       {
-        "address": "\nOpp. DEF, Andheri",
+        "address": "<br>Opp. DEF, Andheri",
         "poc": "Mr. Cantona",
         "phone": "+91 22 123456"
       }]}}],
