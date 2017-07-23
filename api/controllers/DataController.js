@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs');
-var data = fs.readFileSync('../apiData/apiData.json');
+var data = fs.readFileSync('./api/apiData/apiData.json');
 var apiData = JSON.parse(data);
 
 /* 
@@ -12,11 +12,12 @@ exports.getData = function (req, res) {
   var trackingId = reqData.trackingId;
   var intent = reqData.metadata.intentName + '-context';
 
-  var package = apiData.reduce((obj, intent) => {
+  var packageDetails = apiData.reduce((obj, intent) => {
     return obj.trackingId === trackingId;
   });
-  console.log(createResponse(package));
-  res.JSON(createResponse(package));
+  console.log(createResponse(packageDetails));
+
+  res.JSON(createResponse(packageDetails));
 }
 
 function createResponse(obj, intent) {
@@ -26,7 +27,7 @@ function createResponse(obj, intent) {
       {
         'name': intent,
         'parameters': {
-          'package': package
+          'package': obj
         }
       }
     ]
