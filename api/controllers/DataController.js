@@ -14,7 +14,7 @@ exports.getData = function (req, res) {
   var trackingId = req.body.result.parameters.trackingId;
   var intent = req.body.result.metadata.intentName + '-context';
 
-  var packageDetails = apiData.reduce((obj, intent) => {
+  var packageDetails = apiData.packages.reduce((obj, intent) => {
     return obj.trackingId === trackingId;
   });
   console.log(createResponse(packageDetails));
