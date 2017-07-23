@@ -9,14 +9,13 @@ var apiData = JSON.parse(data);
 */
 exports.getData = function (req, res) {
   var reqData = req.body.result;
-  console.log(reqData);
-  console.log(req.body.result.parameters);
   var trackingId = req.body.result.parameters.trackingId;
   var intent = req.body.result.metadata.intentName + '-context';
 
-  var packageDetails = apiData.packages.reduce((obj) => {
+  var packageDetails = apiData.packages.find((obj) => {
     return obj.trackingId === trackingId;
   });
+  console.log('here:', packageDetails);
   console.log(JSON.stringify(createResponse(packageDetails, intent)));
 
   res.json(createResponse(packageDetails, intent));
