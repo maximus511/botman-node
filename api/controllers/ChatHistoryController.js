@@ -13,7 +13,7 @@ exports.saveChat = function (req, res) {
   var obj = req.body;
   var id = obj.authId;
   delete obj._id;
-
+  console.log(req.body);
   if (id) {
     ChatHistory.update({ authId: id }, obj, { upsert: true }, function (err, chat) {
       res.json(chat);

@@ -2,22 +2,18 @@
   "offices": {
     "mumbai": {
       "address": "Sec-10, Kharghar",
-      "poc": "Mr. Mourinho",
       "phone": "+91 22 123456"
     },
     "delhi": {
       "address": "Sec-12, Delhi",
-      "poc": "Mr. Zlatan",
       "phone": "+91 22 123411256"
     },
     "chennai": {
       "address": "Sec-10, Kharghar",
-      "poc": "Mr. De Gea",
       "phone": "+91 22 1233456"
     },
     "manchester": {
       "address": "Opp. Old Trafford",
-      "poc": "Mr. Wayne Rooney",
       "phone": "+91 22 3123456"
     }
   },
