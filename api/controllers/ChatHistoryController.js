@@ -50,6 +50,7 @@ exports.getSample = function (req, res) {
   console.log(req.body);
     var data= {
       "data": {
+        lastLocation: "Delhi"
       },
       "contextOut": [
 
