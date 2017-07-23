@@ -19,7 +19,7 @@ exports.getData = function (req, res) {
   });
   console.log(createResponse(packageDetails));
 
-  res.JSON(createResponse(packageDetails));
+  res.json(createResponse(packageDetails));
 }
 
 function createResponse(obj, intent) {
